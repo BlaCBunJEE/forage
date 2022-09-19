@@ -1,9 +1,7 @@
-from abc import ABC
-
 from forage.engine.car_engine import LyftEngine
 
 
-class CapuletEngine(LyftEngine, ABC):
+class CapuletEngine(LyftEngine):
     def __init__(self, current_mileage, last_service_mileage):
         self.current_mileage = current_mileage
         self.last_service_mileage = last_service_mileage
