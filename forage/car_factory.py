@@ -20,10 +20,10 @@ class CarFactory:
         return car
 
     @staticmethod
-    def create_palindrome(self, current_date, last_service_date, warning_light_is_on,
+    def create_palindrome(current_date, last_service_date, warning_light_is_on,
                           tyre_thread_wear, current_tyre_mileage, last_tyre_service_mileage):
         engine = SternmanEngine(warning_light_is_on)
-        battery = Spindler(current_date, last_tyre_service_mileage)
+        battery = Spindler(current_date, last_service_date)
         tyre = Dunlop(tyre_thread_wear, current_tyre_mileage, last_tyre_service_mileage)
         car = Car(engine, battery, tyre)
         return car
