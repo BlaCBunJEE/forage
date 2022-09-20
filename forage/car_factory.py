@@ -54,3 +54,4 @@ class CarFactory:
         tyre = Dunlop(tyre_thread_wear, current_tyre_mileage, last_tyre_service_mileage)
         car = Car(engine, battery, tyre)
         return car
+

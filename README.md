@@ -1,2 +1,0 @@
-# forage
-Lyft starter repo

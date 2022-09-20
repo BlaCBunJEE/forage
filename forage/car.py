@@ -1,4 +1,4 @@
-from serviceable import Serviceable
+from forage.serviceable import Serviceable
 
 
 class Car(Serviceable):
